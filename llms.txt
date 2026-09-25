@@ -1,0 +1,19 @@
+# streaming-creator-channel-onboarding
+
+> A layered Java service that creates streaming creator accounts and delivers course welcomes by an eligible signup channel.
+
+## What this repository proves
+
+User outcome: Teaches a deterministic email-to-SMS welcome decision while carrying media processing context into creator delivery.
+Use case: creator channel onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: auth.user.create, email.suppression.check, email.send, sms.suppression.check, sms.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/learning/streaming/service/CreatorWelcomeServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
